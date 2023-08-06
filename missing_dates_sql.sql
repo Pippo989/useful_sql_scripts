@@ -1,3 +1,7 @@
+/* builds a date column according to a date range and checks which dates are missing in this range. 
+especially useful after migration to check if all the data was migrated as expected.
+written in BigQuery SQL */
+
 WITH
   /* builds recursively the dates between the chosen date and the current date */
   /* NOTE: EDIT THE REQUIRED DATES */
